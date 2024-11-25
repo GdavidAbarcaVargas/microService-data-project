@@ -17,27 +17,27 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: asistenciaService
+        - id: asistencia-service
           uri: lb://asistencia-service
           predicates:
             - Path=/asistencia/**
-        - id: categoriaService
+        - id: categoria-service
           uri: lb://categoria-service
           predicates:
             - Path=/categorias/**
-        - id: empleadosService
+        - id: empleados-service
           uri: lb://empleados-service
           predicates:
             - Path=/empleados/**
-        - id: horasExtrasService
+        - id: horasExtras-service
           uri: lb://horasextras-service
           predicates:
             - Path=/horasExtras/**
-        - id: justificativoService
+        - id: justificativo-service
           uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
-        - id: planillaService
+        - id: planilla-service
           uri: lb://planilla-service
           predicates:
             - Path=/planilla/**
