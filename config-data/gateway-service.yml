@@ -28,11 +28,11 @@ spring:
         - id: empleados-service
           uri: lb://empleados-service
           predicates:
-            - Path=/empleados/**
+            - Path=/empleado/**
         - id: horasextras-service
           uri: lb://horasextras-service
           predicates:
-            - Path=/horasExtras/**
+            - Path=/horasextras/**
         - id: justificativo-service
           uri: lb://justificativo-service
           predicates:
