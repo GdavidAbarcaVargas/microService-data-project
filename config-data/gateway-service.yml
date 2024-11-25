@@ -29,7 +29,7 @@ spring:
           uri: lb://empleados-service
           predicates:
             - Path=/empleados/**
-        - id: horasExtras-service
+        - id: horasextras-service
           uri: lb://horasextras-service
           predicates:
             - Path=/horasExtras/**
