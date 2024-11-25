@@ -6,7 +6,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka
   instance:
     hostname: localhost
 
@@ -28,7 +28,7 @@ spring:
         - id: empleadosService
           uri: lb://empleados-service
           predicates:
-            - Path=/empleado/**
+            - Path=/empleados/**
         - id: horasExtrasService
           uri: lb://horasextras-service
           predicates:
